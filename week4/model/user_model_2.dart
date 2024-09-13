@@ -16,3 +16,12 @@ class User2 {
 
   User2(this.name, this._money, {this.age, this.city}) {}
 }
+
+
+extension User2ControlExtension on User2 {
+  void controlName(){
+    print(name);
+  }
+}
+
+//User2 ye bir uzantı ekliyorum
