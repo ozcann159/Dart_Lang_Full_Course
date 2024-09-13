@@ -1,3 +1,6 @@
+import 'model/user_model.dart';
+import 'model/user_model_2.dart';
+
 void main() {
   //müsteri adı, yasi, parası var
   final int customerMoney = 50;
@@ -45,47 +48,21 @@ void controlCustomerAge(int value){
     print('tebrikler kazandınız');
   }
  }
- final user4 = User('gfgf', 3523, id: '3432');
- print(user4.name);
- print(user4._id);
+if (user3.isSpecialUser('12')) {
+  user3.money += 5; 
+  print('para eklendi');
+
 }
 
-
-
-//adı olmak zorunda
-//parası olmak zorunda
-//yasini vermeyebilir, yani null
-//citysini vermeyebilir,yani null
-//id degiskenine sadece bu sinif icinden erisilebilir
-
-class User{
-  //Class Özellikleri
- late final String name;
- late final int money;
- late final int? age;
- late final String? city;
-
- late final String _id;
-
- User(String name, int money,{required id,int? age, String? city}){
-  this.name = name;
-  this.age = age;
-  this.city = city;
-  this..money = money;
-  _id = id;
- }
- 
+User2 newUser2 = User2('eö', 12);
+newUser2.money += 5;
  
 }
 
-class User2{
-  //Class Özellikleri
- final String name;
-final int money;
-  final int? age;
-  final String? city;
 
- User2(this.name, this.money, {this.age, this.city}){
 
- }
-}
+
+ 
+ 
+
+
