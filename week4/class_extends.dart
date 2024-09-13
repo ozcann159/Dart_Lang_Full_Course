@@ -51,3 +51,4 @@ class SpecialUser extends IUser {
 
   int get calculateMoney => money - (money ~/ _discount);
 }
+
