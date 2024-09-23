@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:httphello/views/firebase_view.dart';
 import 'package:httphello/views/form_view.dart';
 import 'package:httphello/widgets/httpExample.dart';
 import 'package:httphello/widgets/httpHello.dart';
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: FormView(),
+      home: FirebaseBookView(),
     );
   }
 }
