@@ -9,7 +9,7 @@ class Kapsam{
 
       if (i == 0) {
         int a= 4;
-        print(a);
+        print(this.a);
       }
     }
   }
